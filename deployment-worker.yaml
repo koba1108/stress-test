@@ -1,0 +1,24 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: locust-worker
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: locust-worker
+  template:
+    metadata:
+      labels:
+        app: locust-worker
+    spec:
+      containers:
+        - name: locust
+          image: gcr.io/my-project-local-5150/locust-tasks:latest
+          env:
+            - name: LOCUST_MODE
+              value: worker
+            - name: LOCUST_MASTER
+              value: locust-master
+            - name: TASK_FILE
+              value: tasks.py
