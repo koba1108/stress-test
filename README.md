@@ -1,3 +1,9 @@
+## ローカル環境作成
+
+```bash
+sudo pip install -r locust-tasks/requirements.txt
+```
+
 ## シナリオの切り替え方
 
 deployment-master.yaml / deployment-worker.yaml
@@ -20,8 +26,10 @@ seq-tasks.py　=> impression / conversion / click 測定用
 $ gcloud container clusters get-credentials クラスタ名 --zone ゾーン名 --project プロジェクト名
 ```
 ※ 上記コマンドはGKEのクラスタ詳細ページの「接続」ボタンを押すと表示される。
+
 3. Dockerfileのあるディレクトリへ移動
 4. Dockerイメージをビルド => CloudRegistryへPUSH
+
 ```bash
 $ gcloud builds submit --tag gcr.io/プロジェクト名/locust-tasks:latest .
 ```
