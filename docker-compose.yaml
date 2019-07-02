@@ -1,0 +1,12 @@
+version: '3'
+services:
+  master:
+    container_name: master
+    build: .
+    environment:
+      - TASK_FILE=tasks.py
+      - LOGIN_USER_NAME=nextlevel
+      - LOGIN_PASSWORD=nhRiBHQeM97G
+      - LOCUST_TARGET_HOST=http://asp.sl-galop.xyz
+    ports:
+      - "8089:8089"

@@ -13,13 +13,19 @@ spec:
         app: locust-master
     spec:
       containers:
-        - name: locust
-          image: gcr.io/my-project-local-5150/locust-tasks:latest
+        - name: master
+          image: gcr.io/nextlevel-serverless-galop-dev/locust-tasks:latest
           env:
             - name: LOCUST_MODE
               value: master
             - name: TASK_FILE
               value: tasks.py
+            - name: LOGIN_USER_NAME
+              value: nextlevel
+            - name: LOGIN_PASSWORD
+              value: nhRiBHQeM97G
+            - name: LOCUST_TARGET_HOST
+              value: http://asp.sl-galop-main.xyz
           ports:
             - name: loc-master-web
               containerPort: 8089
