@@ -47,102 +47,99 @@ class MetricsTaskSet(TaskSet):
         }
         logging.info("payload %s", payload)
 
-        self.client.post("/login", data=payload, cookies=self.locust.client.cookies.get_dict())
+        self.client.post("/login", data=payload)
 
     def logout(self):
         self.client.get("/logout")
 
     @task(3)
     def dashboard(self):
-        self.client.get("/", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/")
 
     @task
     def histories(self):
-        self.client.get("/histories", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/histories")
 
     @task
     def programs(self):
-        self.client.get("/programs", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/programs")
 
     @task
     def programs_search(self):
-        self.client.get("/programs?name=メニュー左上の案件を探すからのパターン", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/programs?name=メニュー左上の案件を探すからのパターン")
 
     @task
     def programs_add(self):
-        self.client.get("/programs/add", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/programs/add")
 
     @task
     def alliances(self):
-        self.client.get("/alliances", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/alliances")
 
     @task
     def conversion(self):
-        self.client.get("/conversions", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/conversions")
 
     @task
     def daily_reports(self):
-        self.client.get("/daily-reports", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/daily-reports")
 
     @task
     def daily_reports_program(self):
-        self.client.get("/daily-reports/program", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/daily-reports/program")
 
     @task
     def daily_reports_site(self):
-        self.client.get("/daily-reports/site", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/daily-reports/site")
 
     @task
     def daily_reports_device(self):
-        self.client.get("/daily-reports/device", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/daily-reports/device")
 
     @task
     def daily_reports_partner(self):
-        self.client.get("/daily-reports/partner", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/daily-reports/partner")
 
     @task
     def daily_reports_client(self):
-        self.client.get("/daily-reports/client", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/daily-reports/client")
 
     @task
     def monthly_reports(self):
-        self.client.get("/monthly-reports", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/monthly-reports")
 
     @task
     def payments(self):
-        self.client.get("/payments", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/payments")
 
     @task
     def invoices(self):
-        self.client.get("/invoices", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/invoices")
 
     @task
     def invoices_detail(self):
-        self.client.get("/invoices/view/1", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/invoices/view/1")
 
     @task
     def notices(self):
-        self.client.get("/notices", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/notices")
 
     @task
     def notices_add(self):
-        self.client.get("/notices/add", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/notices/add")
 
     @task
     def contact(self):
-        self.client.get("/contact", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/contact")
 
     @task
     def profile(self):
-        self.client.get("/asps/edit/1", cookies=self.locust.client.cookies.get_dict())
+        self.client.get("/asps/edit/1")
 
 
 class MetricsLocust(HttpLocust):
-    # host = "http://asp.sl-galop.xyy"
-    # host = "http://marchant.ykoba.work"
-    # host = "http://partner.ykoba.work"
     host = os.getenv("LOCUST_TARGET_HOST", default="http://asp.sl-galop.xyz")
 
     task_set = MetricsTaskSet
     min_wait = 3000
-    max_wait = 15000
+    max_wait = 10000

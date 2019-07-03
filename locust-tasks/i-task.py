@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
+import os
 from locust import HttpLocust, TaskSequence, task, seq_task
-from locust.clients import HttpSession
+
 
 class MetricsTaskSet(TaskSequence):
     @seq_task(1)
@@ -15,8 +17,9 @@ class MetricsTaskSet(TaskSequence):
     def conversion(self):
         self.client.get("/conversion?q=cHJvZ3JhbV9pZD0x")
 
+
 class MetricsLocust(HttpLocust):
-    host = "http://i.ykoba.work"
+    host = os.getenv("LOCUST_TARGET_HOST", default="http://i.sl-galop.xyz")
     task_set = MetricsTaskSet
-    min_wait = 500
-    max_wait = 1000
+    min_wait = 3000
+    max_wait = 10000
