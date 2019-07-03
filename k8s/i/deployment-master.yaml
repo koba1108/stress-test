@@ -1,31 +1,46 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: locust-master
+  name: locust-master-i
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: locust-master
+      app: locust-master-i
   template:
     metadata:
       labels:
-        app: locust-master
+        app: locust-master-i
     spec:
       containers:
         - name: master
           image: gcr.io/nextlevel-serverless-galop-dev/locust-tasks:latest
           env:
             - name: LOCUST_MODE
-              value: master
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: LOCUST_MODE_MASTER
             - name: TASK_FILE
-              value: tasks.py
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: I_TASK_FILE
             - name: LOGIN_USER_NAME
-              value: nextlevel
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: ADMIN_USER_NAME
             - name: LOGIN_PASSWORD
-              value: nhRiBHQeM97G
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: ADMIN_PASSWORD
             - name: LOCUST_TARGET_HOST
-              value: http://asp.sl-galop-main.xyz
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: I_HOST
           ports:
             - name: loc-master-web
               containerPort: 8089

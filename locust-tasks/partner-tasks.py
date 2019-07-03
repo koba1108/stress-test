@@ -126,7 +126,7 @@ class MetricsTaskSet(TaskSet):
 
 
 class MetricsLocust(HttpLocust):
-    host = os.getenv("LOCUST_TARGET_HOST", default="http://partner.sl-galop.xyz")
+    host = os.getenv("LOCUST_TARGET_HOST", "http://partner.sl-galop.xyz")
 
     task_set = MetricsTaskSet
     min_wait = 3000
