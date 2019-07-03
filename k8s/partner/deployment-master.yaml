@@ -1,0 +1,53 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: locust-master-partner
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: locust-master-partner
+  template:
+    metadata:
+      labels:
+        app: locust-master-partner
+    spec:
+      containers:
+        - name: master
+          image: gcr.io/nextlevel-serverless-galop-dev/locust-tasks:latest
+          env:
+            - name: LOCUST_MODE
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: LOCUST_MODE_MASTER
+            - name: TASK_FILE
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: PARTNER_TASK_FILE
+            - name: LOGIN_USER_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: ADMIN_USER_NAME
+            - name: LOGIN_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: ADMIN_PASSWORD
+            - name: LOCUST_TARGET_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: PARTNER_HOST
+          ports:
+            - name: loc-master-web
+              containerPort: 8089
+              protocol: TCP
+            - name: loc-master-p1
+              containerPort: 5557
+              protocol: TCP
+            - name: loc-master-p2
+              containerPort: 5558
+              protocol: TCP

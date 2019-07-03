@@ -1,0 +1,45 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: locust-worker-partner
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: locust-worker-partner
+  template:
+    metadata:
+      labels:
+        app: locust-worker-partner
+    spec:
+      containers:
+        - name: worker
+          image: gcr.io/nextlevel-serverless-galop-dev/locust-tasks:latest
+          env:
+            - name: LOCUST_MASTER
+              value: locust-master-partner
+            - name: LOCUST_MODE
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: LOCUST_MODE_WORKER
+            - name: TASK_FILE
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: PARTNER_TASK_FILE
+            - name: LOGIN_USER_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: ADMIN_USER_NAME
+            - name: LOGIN_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: ADMIN_PASSWORD
+            - name: LOCUST_TARGET_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: galop-config
+                  key: PARTNER_HOST

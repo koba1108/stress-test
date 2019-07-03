@@ -1,12 +1,42 @@
 version: '3'
 services:
-  master:
-    container_name: master
+  asp-tasks:
+    container_name: asp-tasks
     build: .
     environment:
-      - TASK_FILE=tasks.py
+      - TASK_FILE=asp-tasks.py
       - LOGIN_USER_NAME=nextlevel
       - LOGIN_PASSWORD=nhRiBHQeM97G
       - LOCUST_TARGET_HOST=http://asp.sl-galop.xyz
     ports:
       - "8089:8089"
+  i-tasks:
+    container_name: i-tasks
+    build: .
+    environment:
+      - TASK_FILE=i-tasks.py
+      - LOGIN_USER_NAME=nextlevel
+      - LOGIN_PASSWORD=nhRiBHQeM97G
+      - LOCUST_TARGET_HOST=http://i.sl-galop.xyz
+    ports:
+      - "8090:8089"
+  marchant-tasks:
+    container_name: marchant-tasks
+    build: .
+    environment:
+      - TASK_FILE=marchant-tasks.py
+      - LOGIN_USER_NAME=nextlevel
+      - LOGIN_PASSWORD=nhRiBHQeM97G
+      - LOCUST_TARGET_HOST=http://marchant.sl-galop.xyz
+    ports:
+      - "8091:8089"
+  partner-tasks:
+    container_name: partner-tasks
+    build: .
+    environment:
+      - TASK_FILE=partner-tasks.py
+      - LOGIN_USER_NAME=nextlevel
+      - LOGIN_PASSWORD=nhRiBHQeM97G
+      - LOCUST_TARGET_HOST=http://partner.sl-galop.xyz
+    ports:
+      - "8092:8089"
