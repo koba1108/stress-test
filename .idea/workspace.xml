@@ -1,34 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/README.md" line="6" mnemonic="3" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="1b85c312-4cdb-4dcf-80af-ac6a61dc35a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/asp/deployment-master.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/asp/deployment-worker.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/asp/service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/configMap.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/i/deployment-worker.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/marchant/deployment-master.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/marchant/deployment-worker.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/marchant/service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/partner/deployment-master.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/partner/deployment-worker.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/partner/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/deployment-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/i/deployment-master.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/deployment-worker.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/i/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locust-tasks/asp-tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/locust-tasks/asp-tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locust-tasks/i-task.py" beforeDir="false" afterPath="$PROJECT_DIR$/locust-tasks/i-tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locust-tasks/marchant-tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/locust-tasks/marchant-tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locust-tasks/partner-tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/locust-tasks/partner-tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ykoba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ykoba.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,46 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/k8s/partner/deployment-worker.yaml">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="e#392#456#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/k8s/asp/deployment-worker.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/k8s/i/deployment-worker.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="e#374#432#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/k8s/marchant/deployment-worker.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="e#395#460#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="476">
+              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -134,7 +73,6 @@
         <option value="$PROJECT_DIR$/.dockerignore" />
         <option value="$PROJECT_DIR$/k8s/deployment-master.yaml" />
         <option value="$PROJECT_DIR$/k8s/deployment-worker.yaml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/k8s/i/deployment-master.yaml" />
         <option value="$PROJECT_DIR$/k8s/marchant/deployment-master.yaml" />
         <option value="$PROJECT_DIR$/locust-tasks/tasks.py" />
@@ -167,6 +105,7 @@
         <option value="$PROJECT_DIR$/k8s/asp/deployment-worker.yaml" />
         <option value="$PROJECT_DIR$/k8s/i/deployment-worker.yaml" />
         <option value="$PROJECT_DIR$/k8s/marchant/deployment-worker.yaml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -194,35 +133,6 @@
             <path>
               <item name="stress-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="stress-test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stress-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stress-test" type="462c0819:PsiDirectoryNode" />
-              <item name="k8s" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stress-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stress-test" type="462c0819:PsiDirectoryNode" />
-              <item name="k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="asp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stress-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stress-test" type="462c0819:PsiDirectoryNode" />
-              <item name="k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="i" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stress-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stress-test" type="462c0819:PsiDirectoryNode" />
-              <item name="k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="marchant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stress-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stress-test" type="462c0819:PsiDirectoryNode" />
-              <item name="k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="partner" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -304,12 +214,12 @@
       <workItem from="1562054951595" duration="12909000" />
       <workItem from="1562076018499" duration="3378000" />
       <workItem from="1562126852656" duration="37000" />
-      <workItem from="1562126908257" duration="5937000" />
+      <workItem from="1562126908257" duration="6463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32791000" />
+    <option name="totallyTimeSpent" value="33317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="369" y="103" width="1274" height="865" extended-state="0" />
@@ -329,7 +239,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4935065" visible="true" weight="0.24967659" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4935065" visible="true" weight="0.18111254" />
       <window_info anchor="bottom" id="Docker" order="8" weight="0.32988358" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5064935" side_tool="true" weight="0.34411386" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -467,13 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="37" column="3" lean-forward="true" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/k8s/prod/configMap.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -593,11 +496,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/k8s/partner/deployment-worker.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#392#456#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
         </state>
       </provider>
     </entry>
