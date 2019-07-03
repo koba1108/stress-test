@@ -1,23 +1,15 @@
 ## ローカル環境作成
 
 ```bash
-sudo pip install -r locust-tasks/requirements.txt
-```
-
-## シナリオの切り替え方
-
-deployment-master.yaml / deployment-worker.yaml
-```
-　env -> TASK_FILE に測定したいシナリオファイル名を指定
+docker-compose up
 ```
 　　
-## シナリオファイル名
+## シナリオファイル名と内容
 
-tasks.py　=> ログイン/ログアウト 測定用
-
-seq-tasks.py　=> impression / conversion / click 測定用
-
-
+asp-tasks.py　=> ログイン後に各画面を定期的に移動
+i-tasks.py　=> impression, conversion, clickのAPIを呼び出す
+marchant-tasks.py　=> ログイン後に各画面を定期的に移動
+partner-tasks.py　=> ログイン後に各画面を定期的に移動
 
 ## k8sへの適用手順
 1. クラスターを作成
@@ -31,22 +23,17 @@ $ gcloud container clusters get-credentials クラスタ名 --zone ゾーン名 
 4. Dockerイメージをビルド => CloudRegistryへPUSH
 
 ```bash
-$ gcloud builds submit --tag gcr.io/プロジェクト名/locust-tasks:latest .
+docker build -t gcr.io/${your_project_name}/locust-tasks:latest .
+docker push gcr.io/${your_project_name}/locust-tasks:latest
 ```
 
-5. Deployment登録
+5. kubectl apply でクラスタに反映
 ```
-＜Master＞
-$ kubectl apply -f deployment-master.yaml
-
-＜Worker＞
-$ kubectl apply -f deployment-worker.yaml
-```
-
-6. Service登録
-```bash
-$ kubectl apply -f service.yaml
+$ kubectl apply -f k8s/configMap.yaml
+$ kubectl apply -f k8s/asp/
+$ kubectl apply -f k8s/i/
+$ kubectl apply -f k8s/marchant/
+$ kubectl apply -f k8s/partner/
 ```
 
-
-7. GKE -> サービス に表示されているエンドポイントのport8089のリンクをクリックしてLocustページへ
+7. GKE -> サービスに表示されているグローバルIPにアクセス
