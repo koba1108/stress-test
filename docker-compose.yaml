@@ -17,7 +17,7 @@ services:
       - TASK_FILE=i-tasks.py
       - LOGIN_USER_NAME=nextlevel
       - LOGIN_PASSWORD=nhRiBHQeM97G
-      - LOCUST_TARGET_HOST=http://i.sl-galop.xyz
+      - LOCUST_TARGET_HOST=https://i-dot-nextlevel-serverless-galop-dev.appspot.com
     ports:
       - "8090:8089"
   marchant-tasks:

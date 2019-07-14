@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b85c312-4cdb-4dcf-80af-ac6a61dc35a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ykoba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ykoba.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/configMap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/configMap.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +23,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+            <state relative-caret-position="285">
+              <caret line="19" column="83" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/k8s/i/deployment-master.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+              <folding>
+                <element signature="e#543#690#0" expanded="true" />
+                <element signature="e#703#860#0" expanded="true" />
+                <element signature="e#873#1028#0" expanded="true" />
+                <element signature="e#1041#1192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/k8s/configMap.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -82,7 +108,6 @@
         <option value="$PROJECT_DIR$/locust-tasks/marchant-tasks.py" />
         <option value="$PROJECT_DIR$/locust-tasks/partner-tasks.py" />
         <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/docker-compose.yaml" />
         <option value="$PROJECT_DIR$/locust-tasks/i-tasks.py" />
         <option value="$PROJECT_DIR$/k8s/dev/asp/deployment-master.yaml" />
         <option value="$PROJECT_DIR$/k8s/dev/asp/service.yaml" />
@@ -98,7 +123,6 @@
         <option value="$PROJECT_DIR$/k8s/dev/partner/deployment-master.yaml" />
         <option value="$PROJECT_DIR$/k8s/dev/configMap.yaml" />
         <option value="$PROJECT_DIR$/k8s/prod/configMap.yaml" />
-        <option value="$PROJECT_DIR$/k8s/configMap.yaml" />
         <option value="$PROJECT_DIR$/k8s/partner/deployment-master.yaml" />
         <option value="$PROJECT_DIR$/k8s/asp/deployment-master.yaml" />
         <option value="$PROJECT_DIR$/k8s/partner/deployment-worker.yaml" />
@@ -106,6 +130,9 @@
         <option value="$PROJECT_DIR$/k8s/i/deployment-worker.yaml" />
         <option value="$PROJECT_DIR$/k8s/marchant/deployment-worker.yaml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/docker-compose.yaml" />
+        <option value="$PROJECT_DIR$/k8s/configMap.yaml" />
       </list>
     </option>
   </component>
@@ -113,8 +140,8 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="369" />
-    <option name="y" value="103" />
+    <option name="x" value="347" />
+    <option name="y" value="154" />
     <option name="width" value="1274" />
     <option name="height" value="865" />
   </component>
@@ -126,7 +153,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,10 +160,22 @@
               <item name="stress-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="stress-test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="stress-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stress-test" type="462c0819:PsiDirectoryNode" />
+              <item name="k8s" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stress-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stress-test" type="462c0819:PsiDirectoryNode" />
+              <item name="k8s" type="462c0819:PsiDirectoryNode" />
+              <item name="i" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,18 +252,20 @@
       <workItem from="1562054951595" duration="12909000" />
       <workItem from="1562076018499" duration="3378000" />
       <workItem from="1562126852656" duration="37000" />
-      <workItem from="1562126908257" duration="6463000" />
+      <workItem from="1562126908257" duration="6790000" />
+      <workItem from="1562226863087" duration="601000" />
+      <workItem from="1563078490454" duration="6736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33317000" />
+    <option name="totallyTimeSpent" value="40981000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="369" y="103" width="1274" height="865" extended-state="0" />
+    <frame x="347" y="154" width="1274" height="865" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2784091" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28652596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -239,9 +279,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4935065" visible="true" weight="0.18111254" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4926948" visible="true" weight="0.3156533" />
       <window_info anchor="bottom" id="Docker" order="8" weight="0.32988358" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5064935" side_tool="true" weight="0.34411386" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5073052" side_tool="true" weight="0.3156533" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Flutter Performance" order="12" side_tool="true" />
@@ -271,26 +311,9 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.txt" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="101" column="4" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/locust/core.py" />
     <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg" />
     <entry file="file://$PROJECT_DIR$/.dockerignore" />
-    <entry file="file://$PROJECT_DIR$/k8s/i/service.yaml" />
-    <entry file="file://$PROJECT_DIR$/k8s/partner/service.yaml" />
-    <entry file="file://$PROJECT_DIR$/k8s/i/deployment-master.yaml" />
-    <entry file="file://$PROJECT_DIR$/k8s/i/deployment-worker.yaml" />
-    <entry file="file://$PROJECT_DIR$/k8s/marchant/service.yaml" />
-    <entry file="file://$PROJECT_DIR$/k8s/marchant/deployment-master.yaml" />
-    <entry file="file://$PROJECT_DIR$/k8s/partner/deployment-worker.yaml" />
-    <entry file="file://$PROJECT_DIR$/k8s/marchant/deployment-worker.yaml" />
-    <entry file="file://$PROJECT_DIR$/k8s/partner/deployment-master.yaml" />
-    <entry file="file://$PROJECT_DIR$/k8s/asp/deployment-master.yaml" />
     <entry file="file://$PROJECT_DIR$/.editorconfig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -360,37 +383,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/locust-tasks/i-tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/k8s/prod/configMap.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/k8s/prod/i/service.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/k8s/prod/configMap.yaml" />
+    <entry file="file://$PROJECT_DIR$/k8s/prod/i/service.yaml" />
     <entry file="file://$PROJECT_DIR$/k8s/asp/service.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -402,13 +396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/k8s/i/deployment-master.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -434,13 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/k8s/configMap.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -506,8 +486,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        <state relative-caret-position="518">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="196" column="5" selection-start-line="196" selection-start-column="5" selection-end-line="196" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locust-tasks/i-tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="83" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/k8s/i/deployment-master.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#543#690#0" expanded="true" />
+            <element signature="e#703#860#0" expanded="true" />
+            <element signature="e#873#1028#0" expanded="true" />
+            <element signature="e#1041#1192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/k8s/configMap.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

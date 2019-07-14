@@ -12,6 +12,6 @@ data:
   ADMIN_USER_NAME: nextlevel
   ADMIN_PASSWORD: nhRiBHQeM97G
   ASP_HOST: http://asp.sl-galop-main.xyz
-  I_HOST: http://i.sl-galop-main.xyz
+  I_HOST: https://i-dot-nextlevel-serverless-galop-dev.appspot.com
   MARCHANT_HOST: http://marchant.sl-galop-main.xyz
   PARTNER_HOST: http://partner.sl-galop-main.xyz
